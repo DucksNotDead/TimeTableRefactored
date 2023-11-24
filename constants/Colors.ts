@@ -1,19 +1,18 @@
-const tintColorLight = '#2f95dc';
-const tintColorDark = '#fff';
+import {useColorScheme} from "react-native";
 
-export default {
-  light: {
-    text: '#000',
-    background: '#fff',
-    tint: tintColorLight,
-    tabIconDefault: '#ccc',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#fff',
-    background: '#000',
-    tint: tintColorDark,
-    tabIconDefault: '#ccc',
-    tabIconSelected: tintColorDark,
-  },
+const root = {
+  white: '#fff',
+  black: '#000',
+  lightGrey: '#f0f0f0',
+  darkGrey: '#A7ACB5',
+  primary: '#6881f3',
+  primaryAccent: 'rgba(104,129,243,0.4)',
+  transparent: '#FFFFFF00',
+
+  days: '#c44569',
+  timepoints: '#55bd75',
+}
+
+export const Colors = {
+  ...root
 };
